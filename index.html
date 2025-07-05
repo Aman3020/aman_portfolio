@@ -5,7 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+       <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
@@ -84,13 +89,10 @@
                     </div>
 
                     <div class="home__social">
-                        <a href="" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href=""  target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/aman-singh-440663294/"  target="_blank" class="home__social-link">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
-                        <a href=""  target="_blank" class="home__social-link">
+                        <a href="https://github.com/Aman3020"  target="_blank" class="home__social-link">
                             <i class="ri-github-line"></i>
                         </a>
                     </div>
@@ -98,9 +100,10 @@
                 </div>
                 <div class="home__info">
                     <p class="home__description">
-                        <b>Frontend Developer</b>, with knowledge in web 
-                        development and design, I offer the best 
-                        projects resulting in quality work.
+                       <b>Full Stack Developer</b> with a solid foundation in DSA and Web Development. 
+                       Experienced in building MERN stack projects 
+                       and consistently improving through 
+                       solving 700+ coding and 50+ SQL problems.
                     </p>
 
                     <a href="#about" class="home__scroll">
@@ -135,19 +138,27 @@
                     </div>
                 </div>
 
-                <div class="about__info">
+                <!-- Interactive code block shown by default -->
+                <div class="about__code-interactive" id="about-code-interactive">
+                    <pre class="about__code-block"><code>// Welcome to my portfolio!
+function aboutMe() {
+  return "Click Compile to learn more about Aman Singh!";
+}
+</code></pre>
+                    <button class="about__compile-btn" id="about-compile-btn">Compile</button>
+                </div>
+
+                <!-- Real about content, hidden by default -->
+                <div class="about__real-content" id="about-real-content" style="display:none;">
                     <p class="about__description">
-                        Passionate about creating <b>Web Pages</b> with 
-                        <b>UI/UX User Interface</b>, I have years of 
-                        experience and many clients are happy with 
-                        the projects carried out.
+                        Dedicated to building efficient and scalable <b>Web Applications</b>
+                         with a focus on both frontend and backend development. I have hands-on experience in 
+                         solving complex problems and delivering real-world projects with clean and maintainable code.
                     </p>
 
                     <ul class="about__list">
                         <li class="about__item">
-                            <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                            React, Git & GitHub, Bootstrap, Flutter & 
-                            Figma.
+                            <b>My Skills Are:</b> HTML, CSS, JavaScript, React.js, Node.js, Express.js, MySQL, MongoDB, Git & GitHub, Docker, and C++ (Advanced).
                         </li>
                     </ul>
 
@@ -156,11 +167,14 @@
                             <i class="ri-send-plane-line"></i> Contact Me
                         </a>
 
+                        <a href="assets/Best_Resume.pdf" download class="button">
+                            <i class="ri-download-2-line"></i> Download CV
+                        </a>
+
                         <a href="" target="_blank" class="button__ghost">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
                     </div>
-
                 </div>
             </div>
          </section>
@@ -210,6 +224,24 @@
                         </p>
                     </div>
                 </article>
+
+                <article class="services__card">
+                <div class="services__border"></div>
+
+                <div class="services__content">
+                    <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-stack-line"></i>
+                    </div>
+
+                    <h2 class="services__title">Problem Solving</h2>
+
+                    <p class="services__description">
+                        Strong command over Data Structures and Algorithms with 700+ problems solved. 
+                        I write optimized and scalable code to tackle real-world computational challenges.
+                    </p>
+                </div>
+            </article>
             </div> 
          </section>
 
@@ -224,7 +256,7 @@
                     <div class="projects__image">
                         <img src="assets/img/project-1.jpg" alt="image" class="projects_img">
 
-                        <a href="#" class="projects__button button">
+                        <a href="https://fashionwavess.netlify.app/" target="_blank" class="projects__button button">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -241,12 +273,8 @@
                     </div>
 
                     <div class="projects__buttons">
-                        <a href="" target="_blank" class="projects__link">
+                        <a href="https://github.com/Aman3020/Fashion-Wavess" target="_blank" class="projects__link">
                             <i class="ri-github-line"></i> View
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-dribbble-line"></i> View
                         </a>
                     </div>
                 </article>
@@ -262,7 +290,7 @@
 
                     <div class="projects__content">
                         <h3 class="projects__subtitle">Website</h3>
-                        <h2 class="projects__title">Restaurant Website</h2>
+                        <h2 class="projects__title">Blog Website</h2>
 
                         <p class="project__description">
                             Project that you carry out in the design 
@@ -274,10 +302,6 @@
                     <div class="projects__buttons">
                         <a href="" target="_blank" class="projects__link">
                             <i class="ri-github-line"></i> View
-                        </a>
-
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-dribbble-line"></i> View
                         </a>
                     </div>
                 </article>
@@ -307,9 +331,6 @@
                             <i class="ri-github-line"></i> View
                         </a>
 
-                        <a href="" target="_blank" class="projects__link">
-                            <i class="ri-dribbble-line"></i> View
-                        </a>
                     </div>
                 </article>
             </div>
@@ -390,13 +411,13 @@
                         </div>
 
                         <div class="contact__social-links">
-                            <a href="" target="_blank" class="contact__social-link">
+                            <!-- <a href="" target="_blank" class="contact__social-link">
                                 <i class="ri-facebook-circle-line"></i>
                             </a>
 
                             <a href="" target="_blank" class="contact__social-link">
                                 <i class="ri-instagram-line"></i>
-                            </a>
+                            </a> -->
 
                             <a href="" target="_blank" class="contact__social-link">
                                 <i class="ri-linkedin-box-line"></i>

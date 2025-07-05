@@ -141,3 +141,16 @@ sr.reveal(`.home__name, .home__info,
     .about__container .section__title-1, .about__info,
     .contact__social, .contact__data`, {origin: 'left'})
     sr.reveal(`services__card, .projects__card`, {interval: 100})
+
+// =============== ABOUT SECTION CODE INTERACTIVE ===============
+document.addEventListener('DOMContentLoaded', function() {
+  const compileBtn = document.getElementById('about-compile-btn');
+  const codeBlock = document.getElementById('about-code-interactive');
+  const realContent = document.getElementById('about-real-content');
+  if (compileBtn && codeBlock && realContent) {
+    compileBtn.addEventListener('click', function() {
+      codeBlock.style.display = 'none';
+      realContent.style.display = 'block';
+    });
+  }
+});
